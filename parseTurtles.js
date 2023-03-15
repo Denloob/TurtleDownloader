@@ -11,9 +11,8 @@ copy the result and save it as a turtles.json file
 const image_links = [];
 
 function get_url(img_element) {
-  const srcset = img_element[i].getAttribute("srcset");
-  console.log(srcset);
-  const src = srcset.split(",")[0].split(" ")[0];
+  const srcset = img_element.getAttribute("srcset");
+  const src = srcset.split(",").at(-1).split(" ").at(-2);
   return src;
 }
 
