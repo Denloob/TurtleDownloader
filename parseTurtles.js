@@ -17,7 +17,8 @@ function get_url(img_element) {
 }
 
 setInterval(() => {
-  const img_tag = document.getElementsByClassName("BIv_s");
+  const class_name = "RoN4R"// If the class name not right, check manualy using devtools and update it.
+  const img_tag = document.getElementsByClassName(class_name); 
   for (var i = 0; i < img_tag.length; i++) {
     const url = get_url(img_tag[i]);
     if (!image_links.includes(url)) image_links.push(url);
